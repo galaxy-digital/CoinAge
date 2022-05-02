@@ -12,6 +12,7 @@ declare interface ResultType {
 interface WalletTypes extends NewtxsResponseType {
     updated: number
     loading?: boolean
+    userid: number
     currentPage: string
 }
 interface useStoreTypes extends WalletTypes {

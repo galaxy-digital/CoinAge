@@ -5,6 +5,7 @@ const appKey = process.env.REACT_APP_GTAG + 'admin.config'
 
 const initialState: WalletTypes = {
 	currentPage: '',
+	userid: 0,
 	updated: 0,
 	loading: false
 }

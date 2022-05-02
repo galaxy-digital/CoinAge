@@ -11,7 +11,7 @@ interface HeaderProps {
 }
 
 const Header = ({ type } : HeaderProps) => {
-	const { update, adminid} = useStore()
+	const { update, userid} = useStore()
 	const updateStatus = (params : {[key : string] : string | number | boolean | any}) => setStates({ ...state, ...params })
 	const [state, setStates] = React.useState({
 		showSideMenu : false
@@ -25,11 +25,11 @@ const Header = ({ type } : HeaderProps) => {
 						<div className='justify middle'>
 							<Link to="/admin" className={`header-menu ${type === "admin" ? 'active'  : ''}`}><span><img src={menu_logo} alt="logo" /></span>Admin</Link>
 							{
-								adminid===null || adminid ===''? (<>
+								userid===null ? (<>
 									<Link to="/login" className={`header-menu ${type === "login" ? 'active'  : ''}`}><span><img src={menu_logo} alt="logo" /></span>Login</Link>
 								</>)
 								:(<>
-									<span className={`header-menu`} onClick={() => {update({adminid:''}); window.location.href = '/login'; }}><span><img src={menu_logo} alt="logo" /></span>Logout</span>
+									<span className={`header-menu`} onClick={() => {update({userid:''}); window.location.href = '/login'; }}><span><img src={menu_logo} alt="logo" /></span>Logout</span>
 								</>)
 							}
 							  <span className="side-menu" onClick={() => { updateStatus({ showSideMenu : true }) }}><img src={menu} alt={'menu'} /></span>

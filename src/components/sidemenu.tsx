@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
-import {  toBalance } from '../util';
 import { Close } from '../components/Icons'
-import Networks from '../config/network.json'
 import logo from '../assets/img/logo-beamstarter.svg'
 
 

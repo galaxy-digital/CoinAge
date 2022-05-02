@@ -6,11 +6,11 @@
 	--font-size-h5: 18px;
 	--font-size-h6: 16px;
 	--font-size-p: 16px;
-	--font-white-color: #fff;
-	--font-dark-color: #dbdbdb;
-	--default-back-color: #07071c;
-	--default-color-1: #00ffff;
-	--default-color-2: #ff2691;
+	--font-white-color: rgba(0,0,0,.5);
+	--font-dark-color: #313131;
+	--default-back-color: #333;
+	--default-color-1: rgb(255,182,40);
+	--default-color-2: rgb(249,62,126) ;
 }
 
 @mixin transition {
@@ -52,27 +52,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: var(--font-size-p);
-	color: var(--font-white-color);
-	background-color: #07071c;
-}
-
-* {
-	scrollbar-width: 10px;
-	scrollbar-color: #506587 #542a54;
-}
-
-*::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
-}
-
-*::-webkit-scrollbar-track {
-	background: #6f4492;
-}
-
-*::-webkit-scrollbar-thumb {
-	background-color: #3b2a80;
-	border-radius: 1px;
+	color: var(--font-back-color);
+	background-color: #fff;
 }
 
 .container {
@@ -1025,38 +1006,30 @@ h6,
 @media (max-width: 1280px) {
 	h1,
 	.h1 {
-		// font-size: 48px;
-		// var(--font-size-h6, 48px);
-		// --font-size-h6: 48px;
 		font-weight: bolder;
 	}
 	h2,
 	.h2 {
 		--font-size-h2: 36px;
-		// font-size: 36px;
 		font-weight: bolder;
 	}
 	h3,
 	.h3 {
 		--font-size-h3: 24px;
-		// font-size: 24px;
 		font-weight: bolder;
 	}
 	h4,
 	.h4 {
 		--font-size-h4: 20px;
-		// font-size: 20px;
 		font-weight: bolder;
 	}
 	h5,
 	.h5 {
-		// font-size: 16px;
 		--font-size-h5: 16px;
 		font-weight: bolder;
 	}
 	h6,
 	.h6 {
-		// font-size: 14px;
 		--font-size-h6: 14px;
 		font-weight: bolder;
 	}
@@ -1089,14 +1062,12 @@ input[type="number"],
 input[type="date"],
 input[type="datetime-local"],
 textarea {
-	border: 1px solid #333;
-	border-radius: 20px;
-	color: #eee;
-	padding: 0.7rem 1.8rem;
-	font-size: 1rem;
+	color: #a1a1a1;
+    padding: 10px 15px;
 	outline: none;
-	margin: 10px 0 0 0;
-	background-color: rgba(0, 0, 0, 0.3);
+	margin-bottom: 35px;
+	background-color: #fff;
+	box-shadow: 0px 0px 40px 0px rgba(255, 70, 122, 0.1);
 }
 
 input[type="datetime-local"]{
@@ -1113,7 +1084,7 @@ input[type="text"].disabled,
 input[type="password"].disabled,
 input[type="number"].disabled,
 textarea.disabled {
-	background-color: #eee;
+	background-color: #bbb;
 }
 
 .bold {
@@ -1252,59 +1223,6 @@ label {
 	user-select: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
-}
-
-
-.select-input {
-    @include relative;
-    input {
-        @extend .pointer;
-    }
-	z-index: 10001;
-    &:hover {
-        .select-list {
-           display: block;
-        }
-    }
-    .down_icon {
-        img {
-            width: 20px;
-            height: 20px;
-        }
-        @include absolute;
-        right: 10px;
-        top: 40%;
-        transform: rotate(-90deg);
-    } 
-    .select-list {
-        top: 100%;
-        display: none;
-        @include absolute;
-        width: calc(100% - 25px);
-        left: 12px;
-        z-index: 10000;
-        border: 1px solid var(--default-color);
-        border-radius: 5px;
-        box-shadow: 1px 2px 5px var(--default-color);
-        .select-item {
-            &:active {
-                .select-list {
-                    display: none
-                }
-            }
-            @extend .no-select;
-            @extend .pointer;
-            padding: 15px 1em;
-			width: 100%;
-            border-bottom:  1px solid #222;
-            background-color: rgba(0, 0, 0,0.9);
-			color: #eee;
-			&:hover{
-				background-color: black;
-				border-bottom: 1px solid #333;
-			}
-        }
-    }
 }
 
 .float-left {

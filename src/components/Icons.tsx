@@ -15,7 +15,6 @@ export const Binance = ({ width, height } : IconProps) => {
 				<path style={{ fill: '#fff' }} d="M575.2 512 512 448.7l-46.7 46.8-5.4 5.3-11.1 11.1-.1.1.1.1 63.2 63.2 63.2-63.3z" />
 			</g>
 		</svg>
-
 	)
 }
 

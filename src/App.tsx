@@ -8,6 +8,8 @@ import Home from './pages/Home'
 import Error from './pages/404'
 import Loading from './components/Loading'
 
+import './assets/scss/coinage.scss'
+
 
 function App() {
 	const {	loading, userid } = useStore()
@@ -18,7 +20,7 @@ function App() {
 				<Route exact path="/login" component={Login}></Route>
 				<Route exact path="/home" component={Home}></Route>
 				<Route exact path="/error" component={Error}></Route>
-				<Route path="*" component={Home}></Route>
+				<Route path="*" component={Error}></Route>
 			</Switch>
 			<ToastContainer/>
 			<Loading width={70} height={70} color={'var(--default-color-1)'} opacity={0.3} show={!!loading}/>

@@ -1,20 +1,14 @@
+import React from 'react'
 
-import {NF} from '../util'
-import '../assets/scss/beamstarter.scss'
-
-const Progress = ({value, max}) => {
+const Card = ({img, title, content}) => {
 	return (
-		<div className='ml3 mr3'>
-			<div style={{borderRadius: '5px', height: '5px', backgroundColor:'rgba(0, 0,0,0.9)', position:'relative', width:'100%', overflow:'hidden', display:'block'}}>
-				<span style={{position: 'absolute', left:0, top:0, backgroundColor:'#1a6bff', height:'5px', borderRadius:'5px', width:`${NF(value*100/max, 0)}%`}}></span>
-			</div>
-			<div className='justify'>
-				<p style={{fontSize:'0.8rem'}}>{NF(value*100/max)+'%'}</p>
-				<p style={{fontSize:'0.8rem'}}>{value}/{max}</p>
-			</div>
+		<div className='card'>
+			<img style={{marginBottom:'28px'}} src={img }  />
+			<h4 style={{marginBottom:'28px', fontSize:'18px'}}>{title}</h4>
+			<p style={{}}>{content}</p>
 		</div>
 	)
 }
 
  
-export default Progress;
+export default Card;

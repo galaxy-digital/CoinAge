@@ -9,7 +9,7 @@ const SignIn = () => {
 
 	return (
 		<div className="pools">
-				Signin
+				<>Sign In</>
 		</div>
 	)
 }

@@ -2,15 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import useStore from '../useStore'
 import SideMenu from './sidemenu'
-import logo from '../assets/img/logo-beamstarter.svg'
-import menu_logo from '../assets/img/logofav.svg'
-import menu from '../assets/img/menu.webp'
+import logo from '../assets/img/logo.png'
+import menu from '../assets/img/menu-icon.svg'
   
-interface HeaderProps {
-	type : string
-}
-
-const Header = ({ type } : HeaderProps) => {
+const Header = () => {
 	const { update, userid} = useStore()
 	const updateStatus = (params : {[key : string] : string | number | boolean | any}) => setStates({ ...state, ...params })
 	const [state, setStates] = React.useState({
@@ -23,16 +18,14 @@ const Header = ({ type } : HeaderProps) => {
 					<div className='justify' >
 						<Link to="/"><img src={logo} className="logo " alt={'logo'} /></Link>
 						<div className='justify middle'>
-							<Link to="/admin" className={`header-menu ${type === "admin" ? 'active'  : ''}`}><span><img src={menu_logo} alt="logo" /></span>Admin</Link>
-							{
-								userid===null ? (<>
-									<Link to="/login" className={`header-menu ${type === "login" ? 'active'  : ''}`}><span><img src={menu_logo} alt="logo" /></span>Login</Link>
-								</>)
-								:(<>
-									<span className={`header-menu`} onClick={() => {update({userid:''}); window.location.href = '/login'; }}><span><img src={menu_logo} alt="logo" /></span>Logout</span>
-								</>)
-							}
-							  <span className="side-menu" onClick={() => { updateStatus({ showSideMenu : true }) }}><img src={menu} alt={'menu'} /></span>
+							<Link to="/" className={`header-menu`}>Home</Link>
+							<Link to="/" className={`header-menu`}>About Us</Link>
+							<Link to="/" className={`header-menu`}>Features</Link>
+							<Link to="/" className={`header-menu`}>Satify</Link>
+							<Link to="/" className={`header-menu`}>Blog</Link>
+							<Link to="/" className={`header-menu`}>Contact</Link>
+							<Link to="/login" className={`header-menu active`}>Sign In</Link>
+							  <span className="side-menu pointer" onClick={() => { updateStatus({ showSideMenu : true }) }}><img src={menu} alt={'menu'} /></span>
 						</div>
 					</div>
 				</div>

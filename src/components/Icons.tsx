@@ -5,7 +5,7 @@ interface IconProps {
 
 export const Binance = ({ width, height } : IconProps) => {
 	return (
-		<svg viewBox="0 0 1024 1024" focusable="false" width={width} height={height}>
+		<svg viewBox="0 0 1024 1024" focusable={false} width={width} height={height}>
 			<g id="Icon">
 				<circle cx="512" cy="512" r="512" style={{ fill: '#f3ba2f' }} />
 				<path style={{ fill: '#fff' }} d="M404.9 468 512 360.9l107.1 107.2 62.3-62.3L512 236.3 342.6 405.7z" />
@@ -20,7 +20,7 @@ export const Binance = ({ width, height } : IconProps) => {
 
 export const Ethereum = ({ width, height } : IconProps) => {
 	return (
-		<svg viewBox="0 0 32 32" focusable="false" width={width} height={height}><g fill="none" fillRule="evenodd"><circle cx="16" cy="16" r="16" fill="#627EEA" /><g fill="#FFF" fillRule="nonzero"><path fillOpacity={".602"} d="M16.498 4v8.87l7.497 3.35z" /><path d="M16.498 4L9 16.22l7.498-3.35z" /><path fillOpacity={".602"} d="M16.498 21.968v6.027L24 17.616z" /><path d="M16.498 27.995v-6.028L9 17.616z" /><path fillOpacity={".2"} d="M16.498 20.573l7.497-4.353-7.497-3.348z" /><path fillOpacity={".602"} d="M9 16.22l7.498 4.353v-7.701z" /></g></g></svg>
+		<svg viewBox="0 0 32 32" focusable={false} width={width} height={height}><g fill="none" fillRule="evenodd"><circle cx="16" cy="16" r="16" fill="#627EEA" /><g fill="#FFF" fillRule="nonzero"><path fillOpacity={".602"} d="M16.498 4v8.87l7.497 3.35z" /><path d="M16.498 4L9 16.22l7.498-3.35z" /><path fillOpacity={".602"} d="M16.498 21.968v6.027L24 17.616z" /><path d="M16.498 27.995v-6.028L9 17.616z" /><path fillOpacity={".2"} d="M16.498 20.573l7.497-4.353-7.497-3.348z" /><path fillOpacity={".602"} d="M9 16.22l7.498 4.353v-7.701z" /></g></g></svg>
 	)
 }
 export const Medium = ({ width, height } : IconProps) => {
@@ -35,6 +35,38 @@ export const Telegram = ({ width, height } : IconProps) => {
 	return (
 		<svg width={width} height={height} viewBox="0 0 16 14">
 			<path fill="currentColor" d="M7.45544 9.886L7.14115 14.074C7.59082 14.074 7.78558 13.891 8.01912 13.6712L10.1274 11.7625L14.4959 14.7932C15.2971 15.2162 15.8616 14.9935 16.0777 14.095L18.9452 1.36605L18.946 1.3653C19.2001 0.243303 18.5177 -0.195445 17.7371 0.0798037L0.882079 6.19302C-0.268241 6.61602 -0.250824 7.22352 0.686532 7.49877L4.99568 8.76851L15.005 2.83529C15.476 2.53979 15.9043 2.70329 15.552 2.99879L7.45544 9.886Z" />
+		</svg>
+	)
+}
+
+export const Facebook = ({ width, height } : IconProps) => {
+	return (
+		<svg width={width} height={height} viewBox="0 0 320 512">
+			<path fill="currentColor" 	d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" />
+			
+		</svg>
+	)
+}
+
+export const Play = ({ width, height } : IconProps) => {
+	return (
+		<svg width={width} height={height} viewBox="0 0 448 512">
+			<path fill="currentColor" 	d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+		</svg>
+	)
+}
+
+export const Phone = ({ width, height } : IconProps) => {
+	return (
+		<svg width={width} height={height} viewBox="0 0 512 512">
+			<path fill="currentColor" 	d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+		</svg>
+	)
+}
+export const Email = ({ width, height } : IconProps) => {
+	return (
+		<svg width={width} height={height} viewBox="0 0 512 512">
+			<path fill="currentColor" 	d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
 		</svg>
 	)
 }
@@ -63,7 +95,7 @@ export const Website = ({ width, height } : IconProps) => {
 
 export const Close = ({ width, height } : IconProps) => {
 	return (
-		<svg width={width} height={height} focusable="false" viewBox="0 0 24 24">
+		<svg width={width} height={height} focusable={false} viewBox="0 0 24 24">
 			<path fill="currentColor" d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z" />
 		</svg>
 	)
@@ -71,7 +103,7 @@ export const Close = ({ width, height } : IconProps) => {
 
 export const Search = ({ width, height } : IconProps) => {
 	return (
-		<svg width={width} height={height} focusable="false" viewBox="0 0 24 24">
+		<svg width={width} height={height} focusable={false} viewBox="0 0 24 24">
 			<path fill="currentColor" d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z" />
 		</svg>
 	)
@@ -79,25 +111,25 @@ export const Search = ({ width, height } : IconProps) => {
 
 export const User = ({ width, height } : IconProps) => {
 	return (
-		<svg width={width} height={height} viewBox="0 0 102 101" focusable="false" ><circle cx="51.0354" cy="50.1096" r="50.1096" fill="#1D1D41"></circle><mask id="mask0" x="0" y="0" width="102" height="101"><circle cx="51.0354" cy="50.1096" r="50.1096" fill="#F7F7F7"></circle></mask><g mask="url(#mask0)"><g clipPath="url(#clip0)"><path d="M51.0382 25.7705C40.2142 25.7705 31.4082 34.5765 31.4082 45.4005C31.4082 56.2245 40.2142 65.0305 51.0382 65.0305C61.8622 65.0305 70.6682 56.2245 70.6682 45.4005C70.6682 34.5765 61.8622 25.7705 51.0382 25.7705Z" fill="#3D3D60"></path><path d="M75.4604 77.8546C70.0862 72.3977 62.9617 69.3926 55.3992 69.3926H46.6747C39.1124 69.3926 31.9877 72.3977 26.6135 77.8546C21.2655 83.2846 18.3203 90.4524 18.3203 98.0378C18.3203 99.2424 19.2969 100.219 20.5014 100.219H81.5725C82.7771 100.219 83.7536 99.2424 83.7536 98.0378C83.7536 90.4524 80.8084 83.2846 75.4604 77.8546Z" fill="#3D3D60"></path></g></g><defs><clipPath id="clip0"><rect width="74.4485" height="74.4485" fill="white" transform="translate(13.8145 25.7705)"></rect></clipPath></defs></svg>
+		<svg width={width} height={height} viewBox="0 0 102 101" focusable={false} ><circle cx="51.0354" cy="50.1096" r="50.1096" fill="#1D1D41"></circle><mask id="mask0" x="0" y="0" width="102" height="101"><circle cx="51.0354" cy="50.1096" r="50.1096" fill="#F7F7F7"></circle></mask><g mask="url(#mask0)"><g clipPath="url(#clip0)"><path d="M51.0382 25.7705C40.2142 25.7705 31.4082 34.5765 31.4082 45.4005C31.4082 56.2245 40.2142 65.0305 51.0382 65.0305C61.8622 65.0305 70.6682 56.2245 70.6682 45.4005C70.6682 34.5765 61.8622 25.7705 51.0382 25.7705Z" fill="#3D3D60"></path><path d="M75.4604 77.8546C70.0862 72.3977 62.9617 69.3926 55.3992 69.3926H46.6747C39.1124 69.3926 31.9877 72.3977 26.6135 77.8546C21.2655 83.2846 18.3203 90.4524 18.3203 98.0378C18.3203 99.2424 19.2969 100.219 20.5014 100.219H81.5725C82.7771 100.219 83.7536 99.2424 83.7536 98.0378C83.7536 90.4524 80.8084 83.2846 75.4604 77.8546Z" fill="#3D3D60"></path></g></g><defs><clipPath id="clip0"><rect width="74.4485" height="74.4485" fill="white" transform="translate(13.8145 25.7705)"></rect></clipPath></defs></svg>
 	)
 }
 
 export const Copy = ({ width, height } : IconProps) => {
 	return (
-		<svg viewBox="0 0 24 24" width={width} height={height} focusable="false" ><path fill="currentColor" d="M20 2H10c-1.103 0-2 .897-2 2v4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-4h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM4 20V10h10l.002 10H4zm16-6h-4v-4c0-1.103-.897-2-2-2h-4V4h10v10z"></path></svg>
+		<svg viewBox="0 0 24 24" width={width} height={height} focusable={false} ><path fill="currentColor" d="M20 2H10c-1.103 0-2 .897-2 2v4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-4h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM4 20V10h10l.002 10H4zm16-6h-4v-4c0-1.103-.897-2-2-2h-4V4h10v10z"></path></svg>
 	)
 }
 
 export const History = ({ width, height } : IconProps) => {
 	return (
-		<svg viewBox="0 0 24 24" focusable="false" width={width} height={height} ><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M13 3a9 9 0 00-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0013 21a9 9 0 000-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></svg>
+		<svg viewBox="0 0 24 24" focusable={false} width={width} height={height} ><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M13 3a9 9 0 00-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0013 21a9 9 0 000-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></svg>
 	)
 }
 
 export const Empty = ({ width, height } : IconProps) => {
 	return (
-		<svg width={width} height={height} focusable="false" viewBox="0 0 24 24">
+		<svg width={width} height={height} focusable={false} viewBox="0 0 24 24">
 			<path fill="currentColor" d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-1.846.634-3.542 1.688-4.897l11.209 11.209A7.946 7.946 0 0 1 12 20c-4.411 0-8-3.589-8-8zm14.312 4.897L7.103 5.688A7.948 7.948 0 0 1 12 4c4.411 0 8 3.589 8 8a7.954 7.954 0 0 1-1.688 4.897z" />
 		</svg>
 	)
@@ -105,21 +137,21 @@ export const Empty = ({ width, height } : IconProps) => {
 
 export const Wallet = ({ width, height } : IconProps) => {
 	return (
-		<svg width={width} height={height} focusable="false" viewBox="0 0 24 24">
+		<svg width={width} height={height} focusable={false} viewBox="0 0 24 24">
 			<path fill="currentColor" d="M20 7V5c0-1.103-.897-2-2-2H5C3.346 3 2 4.346 2 6v12c0 2.201 1.794 3 3 3h15c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM5 5h13v2H5a1.001 1.001 0 0 1 0-2zm15 14H5.012C4.55 18.988 4 18.805 4 18V8.815c.314.113.647.185 1 .185h15v10z" />
 		</svg>
 	)
 }
 export const WalletConnect = ({ width, height } : IconProps) => {
 	return (
-		<svg width={width} height={height} focusable="false" viewBox="0 0 328 328">
+		<svg width={width} height={height} focusable={false} viewBox="0 0 328 328">
 			<path fill="#3B99FC" d="M79.3586 46.4205C142.575 -15.4735 245.069 -15.4735 308.285 46.4205L315.893 53.8695C319.054 56.9642 319.054 61.9817 315.893 65.0764L289.867 90.5581C288.287 92.1055 285.724 92.1055 284.144 90.5581L273.674 80.3073C229.573 37.1286 158.071 37.1286 113.969 80.3073L102.757 91.2851C101.177 92.8324 98.6144 92.8324 97.034 91.2851L71.0079 65.8034C67.8471 62.7087 67.8471 57.6912 71.0079 54.5965L79.3586 46.4205ZM362.109 99.1193L385.272 121.798C388.433 124.893 388.433 129.91 385.272 133.005L280.828 235.267C277.667 238.361 272.542 238.361 269.382 235.267C269.381 235.267 269.381 235.267 269.381 235.267L195.253 162.689C194.463 161.915 193.182 161.915 192.391 162.689C192.391 162.689 192.391 162.689 192.391 162.689L118.265 235.267C115.104 238.361 109.979 238.361 106.818 235.267C106.818 235.267 106.818 235.267 106.818 235.267L2.37061 133.004C-0.790203 129.909 -0.790203 124.891 2.37061 121.797L25.5339 99.118C28.6947 96.0233 33.8194 96.0233 36.9802 99.118L111.11 171.697C111.9 172.471 113.181 172.471 113.971 171.697C113.971 171.697 113.971 171.697 113.971 171.697L188.097 99.118C191.258 96.0232 196.383 96.0231 199.544 99.1177C199.544 99.1178 199.544 99.1178 199.544 99.1179L273.673 171.697C274.463 172.471 275.744 172.471 276.535 171.697L350.663 99.1193C353.824 96.0246 358.948 96.0246 362.109 99.1193Z" />
 		</svg>
 	)
 }
 export const Metamask = ({ width, height } : IconProps) => {
 	return (
-		<svg viewBox="0 0 35 33" width={width} height={height} focusable="false" ><path d="M32.9583 1L19.8242 10.7183L22.2666 4.99099L32.9583 1Z" fill="#E17726" stroke="#E17726" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M2.6626 1L15.6798 10.809L13.3544 4.99098L2.6626 1Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M28.229 23.5332L24.7344 28.8718L32.2173 30.9321L34.3609 23.6499L28.229 23.5332Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M1.27295 23.6499L3.40349 30.9321L10.8734 28.8718L7.39178 23.5332L1.27295 23.6499Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.4706 14.5149L8.39209 17.6507L15.797 17.9876L15.5502 10.0186L10.4706 14.5149Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M25.1505 14.5152L19.9931 9.92822L19.8242 17.9879L27.2291 17.651L25.1505 14.5152Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.8735 28.8718L15.3554 26.7079L11.4971 23.7017L10.8735 28.8718Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.2661 26.7079L24.735 28.8718L24.1244 23.7017L20.2661 26.7079Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M24.735 28.8724L20.2661 26.7085L20.6298 29.611L20.5908 30.842L24.735 28.8724Z" fill="#D5BFB2" stroke="#D5BFB2" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.8735 28.8724L15.0307 30.842L15.0047 29.611L15.3554 26.7085L10.8735 28.8724Z" fill="#D5BFB2" stroke="#D5BFB2" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M15.1081 21.7842L11.3926 20.6958L14.0168 19.4907L15.1081 21.7842Z" fill="#233447" stroke="#233447" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.5127 21.7842L21.604 19.4907L24.2412 20.6958L20.5127 21.7842Z" fill="#233447" stroke="#233447" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.8732 28.8718L11.5228 23.5332L7.3916 23.6499L10.8732 28.8718Z" fill="#CC6228" stroke="#CC6228" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M24.0981 23.5332L24.7347 28.8718L28.2293 23.6499L24.0981 23.5332Z" fill="#CC6228" stroke="#CC6228" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M27.2291 17.6504L19.8242 17.9873L20.5127 21.784L21.604 19.4904L24.2412 20.6955L27.2291 17.6504Z" fill="#CC6228" stroke="#CC6228" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M11.393 20.6955L14.0172 19.4904L15.1085 21.784L15.797 17.9873L8.39209 17.6504L11.393 20.6955Z" fill="#CC6228" stroke="#CC6228" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M8.39209 17.6504L11.497 23.7017L11.393 20.6955L8.39209 17.6504Z" fill="#E27525" stroke="#E27525" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M24.2414 20.6955L24.1245 23.7017L27.2294 17.6504L24.2414 20.6955Z" fill="#E27525" stroke="#E27525" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M15.797 17.9873L15.1084 21.784L15.9788 26.2673L16.1737 20.3586L15.797 17.9873Z" fill="#E27525" stroke="#E27525" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M19.8242 17.9873L19.4604 20.3457L19.6423 26.2673L20.5127 21.784L19.8242 17.9873Z" fill="#E27525" stroke="#E27525" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.5125 21.7843L19.6421 26.2676L20.2657 26.7082L24.1241 23.702L24.241 20.6958L20.5125 21.7843Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M11.3926 20.6958L11.4966 23.702L15.3549 26.7082L15.9785 26.2676L15.1081 21.7843L11.3926 20.6958Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.5909 30.8417L20.6298 29.6107L20.2921 29.3256H15.3295L15.0047 29.6107L15.0307 30.8417L10.8735 28.8721L12.3285 30.0642L15.2775 32.0986H20.331L23.293 30.0642L24.735 28.8721L20.5909 30.8417Z" fill="#C0AC9D" stroke="#C0AC9D" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.2658 26.7081L19.6422 26.2676H15.9787L15.3552 26.7081L15.0044 29.6107L15.3292 29.3256H20.2918L20.6296 29.6107L20.2658 26.7081Z" fill="#161616" stroke="#161616" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M33.517 11.3532L34.6213 5.98873L32.9584 1L20.2661 10.3944L25.1507 14.5149L32.049 16.5234L33.569 14.7482L32.9065 14.2687L33.9587 13.3099L33.1533 12.6879L34.2056 11.8845L33.517 11.3532Z" fill="#763E1A" stroke="#763E1A" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M1 5.98873L2.11724 11.3532L1.40273 11.8845L2.468 12.6879L1.66255 13.3099L2.71483 14.2687L2.05228 14.7482L3.57225 16.5234L10.4706 14.5149L15.3552 10.3944L2.66287 1L1 5.98873Z" fill="#763E1A" stroke="#763E1A" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M32.0491 16.5235L25.1508 14.5151L27.2294 17.6509L24.1245 23.7021L28.2297 23.6503H34.3615L32.0491 16.5235Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.4706 14.5151L3.57238 16.5235L1.27295 23.6503H7.39178L11.4969 23.7021L8.3921 17.6509L10.4706 14.5151Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M19.8241 17.9878L20.2658 10.3945L22.2664 4.99121H13.3545L15.3551 10.3945L15.7968 17.9878L15.9657 20.372L15.9787 26.2678H19.6422L19.6552 20.372L19.8241 17.9878Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path></svg>
+		<svg viewBox="0 0 35 33" width={width} height={height} focusable={false} ><path d="M32.9583 1L19.8242 10.7183L22.2666 4.99099L32.9583 1Z" fill="#E17726" stroke="#E17726" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M2.6626 1L15.6798 10.809L13.3544 4.99098L2.6626 1Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M28.229 23.5332L24.7344 28.8718L32.2173 30.9321L34.3609 23.6499L28.229 23.5332Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M1.27295 23.6499L3.40349 30.9321L10.8734 28.8718L7.39178 23.5332L1.27295 23.6499Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.4706 14.5149L8.39209 17.6507L15.797 17.9876L15.5502 10.0186L10.4706 14.5149Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M25.1505 14.5152L19.9931 9.92822L19.8242 17.9879L27.2291 17.651L25.1505 14.5152Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.8735 28.8718L15.3554 26.7079L11.4971 23.7017L10.8735 28.8718Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.2661 26.7079L24.735 28.8718L24.1244 23.7017L20.2661 26.7079Z" fill="#E27625" stroke="#E27625" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M24.735 28.8724L20.2661 26.7085L20.6298 29.611L20.5908 30.842L24.735 28.8724Z" fill="#D5BFB2" stroke="#D5BFB2" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.8735 28.8724L15.0307 30.842L15.0047 29.611L15.3554 26.7085L10.8735 28.8724Z" fill="#D5BFB2" stroke="#D5BFB2" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M15.1081 21.7842L11.3926 20.6958L14.0168 19.4907L15.1081 21.7842Z" fill="#233447" stroke="#233447" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.5127 21.7842L21.604 19.4907L24.2412 20.6958L20.5127 21.7842Z" fill="#233447" stroke="#233447" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.8732 28.8718L11.5228 23.5332L7.3916 23.6499L10.8732 28.8718Z" fill="#CC6228" stroke="#CC6228" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M24.0981 23.5332L24.7347 28.8718L28.2293 23.6499L24.0981 23.5332Z" fill="#CC6228" stroke="#CC6228" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M27.2291 17.6504L19.8242 17.9873L20.5127 21.784L21.604 19.4904L24.2412 20.6955L27.2291 17.6504Z" fill="#CC6228" stroke="#CC6228" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M11.393 20.6955L14.0172 19.4904L15.1085 21.784L15.797 17.9873L8.39209 17.6504L11.393 20.6955Z" fill="#CC6228" stroke="#CC6228" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M8.39209 17.6504L11.497 23.7017L11.393 20.6955L8.39209 17.6504Z" fill="#E27525" stroke="#E27525" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M24.2414 20.6955L24.1245 23.7017L27.2294 17.6504L24.2414 20.6955Z" fill="#E27525" stroke="#E27525" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M15.797 17.9873L15.1084 21.784L15.9788 26.2673L16.1737 20.3586L15.797 17.9873Z" fill="#E27525" stroke="#E27525" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M19.8242 17.9873L19.4604 20.3457L19.6423 26.2673L20.5127 21.784L19.8242 17.9873Z" fill="#E27525" stroke="#E27525" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.5125 21.7843L19.6421 26.2676L20.2657 26.7082L24.1241 23.702L24.241 20.6958L20.5125 21.7843Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M11.3926 20.6958L11.4966 23.702L15.3549 26.7082L15.9785 26.2676L15.1081 21.7843L11.3926 20.6958Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.5909 30.8417L20.6298 29.6107L20.2921 29.3256H15.3295L15.0047 29.6107L15.0307 30.8417L10.8735 28.8721L12.3285 30.0642L15.2775 32.0986H20.331L23.293 30.0642L24.735 28.8721L20.5909 30.8417Z" fill="#C0AC9D" stroke="#C0AC9D" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M20.2658 26.7081L19.6422 26.2676H15.9787L15.3552 26.7081L15.0044 29.6107L15.3292 29.3256H20.2918L20.6296 29.6107L20.2658 26.7081Z" fill="#161616" stroke="#161616" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M33.517 11.3532L34.6213 5.98873L32.9584 1L20.2661 10.3944L25.1507 14.5149L32.049 16.5234L33.569 14.7482L32.9065 14.2687L33.9587 13.3099L33.1533 12.6879L34.2056 11.8845L33.517 11.3532Z" fill="#763E1A" stroke="#763E1A" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M1 5.98873L2.11724 11.3532L1.40273 11.8845L2.468 12.6879L1.66255 13.3099L2.71483 14.2687L2.05228 14.7482L3.57225 16.5234L10.4706 14.5149L15.3552 10.3944L2.66287 1L1 5.98873Z" fill="#763E1A" stroke="#763E1A" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M32.0491 16.5235L25.1508 14.5151L27.2294 17.6509L24.1245 23.7021L28.2297 23.6503H34.3615L32.0491 16.5235Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M10.4706 14.5151L3.57238 16.5235L1.27295 23.6503H7.39178L11.4969 23.7021L8.3921 17.6509L10.4706 14.5151Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path><path d="M19.8241 17.9878L20.2658 10.3945L22.2664 4.99121H13.3545L15.3551 10.3945L15.7968 17.9878L15.9657 20.372L15.9787 26.2678H19.6422L19.6552 20.372L19.8241 17.9878Z" fill="#F5841F" stroke="#F5841F" strokeWidth={"0.25"} strokeLinecap="round" strokeLinejoin="round"></path></svg>
 	)
 }
 export const Remove = ({ width, height } : IconProps) => {

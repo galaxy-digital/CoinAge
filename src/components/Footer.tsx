@@ -1,16 +1,13 @@
 
 import { Link } from 'react-router-dom'
-import logo from '../assets/img/logo-beamstarter.svg'
+import logo from '../assets/img/logo.png'
 
 const Footer = () => {
 	return (
 		<footer>
 			<div className="container">
 				<div className="row center">
-						<Link to="/"><img src={logo} className="logo " style={{ width: '200px' }} alt={'logo'} /></Link>
-				</div>
-				<div className="row center">
-					<p>© 2022 Copyright - BeamStarter</p>
+					<p>Copyright ThemeLayer. All rights reserved 2020</p>
 				</div>
 			</div>
 		</footer>

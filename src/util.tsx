@@ -1,6 +1,4 @@
 import { toast } from 'react-toastify';
-import { ethers } from "ethers"
-
 export const tips = (html: string) => {
 	toast(html, {
 		position: "top-right",

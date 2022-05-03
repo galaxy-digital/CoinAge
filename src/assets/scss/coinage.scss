@@ -196,6 +196,8 @@ footer{
             border-radius: 7px;
             width: 100%;
             height: 100%;
+            min-width: 300px;
+            min-height: 200px;
             position: relative;
             .play-btn{
                 position: absolute;
@@ -216,6 +218,99 @@ footer{
     }
     .section-3{
         padding: 5em 0;   
+    }
+    .section-roadmap{
+        .roadmap{
+            text-align: center;
+            padding: 0;
+            margin: 1em 0;
+            .block{
+                height: 120px;
+            }
+            img{
+                padding: 1em;
+                border: 1px solid #bbb;
+                border-radius: 50%;
+            }
+            h5{
+                padding: 0;
+                margin: 0;
+            }
+            .line{
+                width: 1px;
+                height: 50px;
+                display: block;
+                background-color: #bbb;
+                margin:5px calc(50% - 1px);
+            }
+            .border{
+                width: 100%;
+                height: 10px;
+                margin: 30px auto ;
+                display: block;
+                background-color: #fa4578;
+                position: relative;
+                &.top{
+                    &::before{
+                        top: -7px;
+                    }    
+                }
+                &.bottom{
+                    &::before{
+                        bottom:  -7px;
+                    }  
+                }
+                &::before{
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    left: calc(50% - 7px);
+                    transform: rotate(45deg);
+                }
+                &.type1{
+                    background-color: #fa4578;
+                    &::before{
+                        background-color: #fa4578;
+                    }
+                }
+                &.type2{
+                    background: #9bb4cf;
+                    &::before{
+                        background-color: #9bb4cf;
+                    }
+                }
+                &.type3{
+                    background-color:#3f5267;
+                    &::before{
+                        background-color: #3f5267;
+                    }
+                }
+                &.type4{
+                    background-color: #ffca28;
+                    &::before{
+                        background-color: #ffca28;
+                    }
+                }
+            }
+        }
+    }
+    .section-price{
+        padding: 5em 0;   
+        .price-card{
+            text-align: center;
+            padding: 1em;
+            box-shadow: 0px 0px 30px 0px rgba(249, 69, 121, 0.1);
+            &:hover{
+                box-shadow: 0px 0px 50px 10px rgba(249, 69, 121, 0.1);
+            }
+            button{
+                &:hover{
+                    background-color: var(--default-color-2);
+                    color: white;
+                }
+            }
+        }
     }
     .section-4{
         padding: 5em 0;   

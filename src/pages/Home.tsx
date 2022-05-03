@@ -13,6 +13,14 @@ import card_1 from '../assets/img/img_(5).png'
 import card_2 from '../assets/img/img_(6).png'
 import card_3 from '../assets/img/img_(7).png'
 
+import card_8 from '../assets/img/img_(8).png'
+import card_9 from '../assets/img/img_(9).png'
+import card_10 from '../assets/img/img_(10).png'
+import card_11 from '../assets/img/img_(11).png'
+import card_12 from '../assets/img/img_(12).png'
+import card_13 from '../assets/img/img_(13).png'
+
+
 import card_14 from '../assets/img/img_(14).png'
 import card_15 from '../assets/img/img_(15).png'
 import card_16 from '../assets/img/img_(16).png'
@@ -47,7 +55,7 @@ const Home = () => {
 				<div className="section-1">
 					<div className="container">
 						<div className="row" >
-							<div className="col-7">
+							<div className="col-lg-7 col-md-12">
 								<div style={{marginTop:'200px'}}>
 									<h1 className='text-white'>CoinAge</h1>
 									<h1 className='text-white'>Be your Own Bank</h1>
@@ -87,7 +95,7 @@ const Home = () => {
 					<div className="container">
 						<h3 className="text-center">How It’s Work</h3>
 						<p className='text-center text-primary linear-border' >More Easy</p>
-						<div className="row mt3">
+						<div className="row mt5 pt5">
 							<div className="col-lg-4 col-sm-12">
 								<Card img={card_1} title={'Sign Up For CoinAge'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'}/>
 							</div>
@@ -103,11 +111,97 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
+				<div className="section-roadmap">
+					<div className="container">
+						<h3 className="text-center">Road Map</h3>
+						<p className='text-center text-primary linear-border' >More Easy</p>
+						<div className="row mt5 pt5">
+							<div className="col-lg-2 col-md-4 col-6" style={{padding:'1px'}}>
+								<div className="roadmap">
+									<div className="block">
+										<img src={card_8} />
+										<div className="line" />
+									</div>
+									<div className='border top type1' />
+									<div className="block">
+										<h5>Q1 2015</h5>
+										<p>Lorem ipsum dolor site in to amet consectetur.</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-2 col-md-4 col-6" style={{padding:'1px'}}>
+								<div className="roadmap">
+									<div className="block">
+										<h5>Q1 2016</h5>
+										<p>Lorem ipsum dolor site in to amet consectetur.</p>
+									</div>
+									<div className='border bottom type2' />
+									<div className="block">
+										<div className="line" />
+										<img src={card_9} />
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-2 col-md-4 col-6" style={{padding:'1px'}}>
+								<div className="roadmap">
+									<div className="block">
+										<img src={card_10} />
+										<div className="line" />
+									</div>
+									<div className='border top type1' />
+									<div className="block">
+										<h5>Q1 2017</h5>
+										<p>Lorem ipsum dolor site in to amet consectetur.</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-2 col-md-4 col-6" style={{padding:'1px'}}>
+								<div className="roadmap">
+									<div className="block">
+										<h5>Q1 2018</h5>
+										<p>Lorem ipsum dolor site in to amet consectetur.</p>
+									</div>
+									<div className='border bottom type2' />
+									<div className="block">
+										<div className="line" />
+										<img src={card_11} />
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-2 col-md-4 col-6" style={{padding:'1px'}}>
+								<div className="roadmap">
+									<div className="block">
+										<img src={card_12} />
+										<div className="line" />
+									</div>
+									<div className='border top type1' />
+									<div className="block">
+										<h5>Q1 2019</h5>
+										<p>Lorem ipsum dolor site in to amet consectetur.</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-2 col-md-4 col-6" style={{padding:'1px'}}>
+								<div className="roadmap">
+									<div className="block">
+										<h5>Q1 2020</h5>
+										<p>Lorem ipsum dolor site in to amet consectetur.</p>
+									</div>
+									<div className='border bottom type2' />
+									<div className="block">
+										<div className="line" />
+										<img src={card_13} />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div className="section-4">
 					<div className="container">
 						<h3 className="text-center">CoinAge Features</h3>
 						<p className='text-center text-primary linear-border' >Luscious For Your Business</p>
-						<div className="row">
+						<div className="row mt5 pt5">
 							<div className="col-lg-4 col-sm-12">
 								<Card img={card_14} title={'Safe And Secure'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'}/>
 							</div>
@@ -129,6 +223,48 @@ const Home = () => {
 						</div>
 						<div className="row center">
 							<button className='button-white'>Learn More</button>
+						</div>
+					</div>
+				</div>
+				<div className="section-price">
+					<div className="container center">
+						<h3 className="text-center">Suitable Price</h3>
+						<div className="row center">
+							<p className='text-center w70 linear-border' >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+						</div>
+						<div className="row mt5 pt5">
+							<div className="col-lg-3 col-sm-6">
+								<div className="price-card">
+									<h5>Get 0.0102 BTC</h5>
+									<p>for</p>
+									<h3>$100</h3>
+									<button className='button-white'>Buy Now</button>
+								</div>
+							</div>
+							<div className="col-lg-3 col-sm-6">
+								<div className="price-card">
+									<h5>Get 0.0202 BTC</h5>
+									<p>for</p>
+									<h3>$200</h3>
+									<button className='button-white'>Buy Now</button>
+								</div>
+							</div>
+							<div className="col-lg-3 col-sm-6">
+								<div className="price-card">
+									<h5>Get 0.0502 BTC</h5>
+									<p>for</p>
+									<h3>$500</h3>
+									<button className='button-white'>Buy Now</button>
+								</div>
+							</div>
+							<div className="col-lg-3 col-sm-6">
+								<div className="price-card">
+									<h5>Get 0.1002 BTC</h5>
+									<p>for</p>
+									<h3>$1000</h3>
+									<button className='button-white'>Buy Now</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -266,10 +402,10 @@ const Home = () => {
 								<p className='text-white' >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 								<br></br>
 								<div className="flex" style={{color:'var(--default-color-2)', marginLeft:'4px'}}>
-										<a  href = "https://t.me/jiru" target={"_blank"} className='icon'><Twitter width={22} height={22} /></a>
-										<a  href = "https://t.me/jiru" target={"_blank"} className='icon'><Facebook width={22} height={22} /></a>
-										<a  href = "https://t.me/jiru" target={"_blank"} className='icon'><Medium width={22} height={22} /></a>
-										<a  href = "https://t.me/jiru" target={"_blank"} className='icon'><Telegram width={22} height={22} /></a>
+									<a  href = "https://t.me/jiru" target={"_blank"} className='icon'><Twitter width={22} height={22} /></a>
+									<a  href = "https://t.me/jiru" target={"_blank"} className='icon'><Facebook width={22} height={22} /></a>
+									<a  href = "https://t.me/jiru" target={"_blank"} className='icon'><Medium width={22} height={22} /></a>
+									<a  href = "https://t.me/jiru" target={"_blank"} className='icon'><Telegram width={22} height={22} /></a>
 								</div>
 							</div>
 							<div className="col-lg-4 col-sm-12">
